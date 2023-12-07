@@ -17,7 +17,7 @@ from dbruntime.databricks_repl_context import get_context
 from pyspark.sql.types import StructType, StructField, StringType
 from pyspark.sql.functions import col, min
 from pyspark.sql.window import Window
-from retry import retry
+from retrying import retry
 import logging
 
 logging.basicConfig()
